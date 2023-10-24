@@ -135,7 +135,13 @@
         <p>Resize this responsive page to see the effect!</p> 
       </div>
 
-      <label for="customRange1" class="form-label rotate" >Vertical servo</label>
+      <label for="customRange1" class="form-label " >Shutdownn</label>
+      <!-- Default switch -->
+       <input type="checkbox" checked data-toggle="toggle" id = "toggle-demo" data-size="lg" onChange="sendMessage('shutdown', '1','yoman',$(this).prop('checked').toString())"/>
+
+       <br/><br/><br/>
+       <br/>
+      <label for="customRange1" class="form-label " >Vertical servo</label>
       <!-- Default switch -->
        <input type="checkbox" checked data-toggle="toggle" id = "toggle-demo" data-size="lg" onChange="sendMessage('startstop', '1','yoman',$(this).prop('checked').toString())"/>
 
