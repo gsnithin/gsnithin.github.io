@@ -149,17 +149,13 @@
        <br/>
 
        <div class="w-50 p-3">
-        <input type="range" class="form-range" min =30 max=80 id="customRange1" onChange="sendMessage('pwm', '25', 'yoman',$(this).val()/10)">
+        <input type="range"  style="appearance: slider-vertical; width: 25px; height: 175px; padding: 0 5px;"  class="form-range" min =30 max=80 id="customRange1" onChange="sendMessage('pwm', '25', 'yoman',$(this).val()/10)">
         <br/>  <br/>
        </div>
 
-       <br/>
        <label for="customRange1" class="form-label">Horizontal servo</label>
        <!-- Default switch -->
-        <input type="checkbox" checked data-toggle="toggle" id = "toggle-demo" data-size="lg" onChange="sendMessage('startstop', '1','yoman',$(this).prop('checked').toString())"/>
  
-        <br/>
-        <br/>
  
         <div class="w-50 p-3">
          <input type="range" class="form-range" min =15 max=100 id="customRange1" onChange="sendMessage('pwm', '22', 'yoman',$(this).val()/10)">
@@ -180,6 +176,22 @@
           <input type="range" class="form-range" min =1 max=100 id="customRange1" onChange="sendMessage('pwm', '24', 'yoman',$(this).val()), sendMessage('pwm', '23', 'yoman',$(this).val())">
           <br/>  <br/>
          </div>
+
+
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <label for="customRange1" class="form-label">Seperate motors</label>
+  
+    
+           <div class="w-50 p-3">
+            <input type="range" class="form-range" min =1 max=100 id="customRange1" onChange="sendMessage('pwm', '23', 'yoman',$(this).val())">
+            <br/>
+            <br/>
+            <input type="range" class="form-range" min =1 max=100 id="customRange1" onChange="sendMessage('pwm', '24', 'yoman',$(this).val())">
+            <br/>  <br/>
+           </div>
 
 
         <div>Subscribed to <input type='text' id='topic' disabled />        <br>
