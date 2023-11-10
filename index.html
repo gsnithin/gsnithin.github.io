@@ -150,7 +150,9 @@
 
        <div class="w-80 p-3">
         <!-- <input type="range"  style="appearance: slider-vertical; width: 25px; height: 175px; padding: 0 5px;"  class="form-range" min =35 max=80 id="customRange1" onChange="sendMessage('pwm', '25', 'yoman',$(this).val()/10)"> -->
-        <input type="range" class="form-range" min =35 max=80 id="customRange1" onChange="sendMessage('pwm', '25', 'yoman',$(this).val()/10)">
+        <input type="range" class="form-range" min =35 max=80 id="customRange1" onChange="sendMessage('pwm', '25', 'yoman',$(this).val()/10),this.nextElementSibling.value = this.value">
+        <output>24</output>
+
         <br/>  <br/>
        </div>
 
@@ -159,7 +161,8 @@
  
  
         <div class="w-80 p-3">
-         <input type="range" class="form-range" min =25 max=100 id="customRange1" onChange="sendMessage('pwm', '22', 'yoman',$(this).val()/10)">
+         <input type="range" class="form-range" min =25 max=100 id="customRange1" onChange="sendMessage('pwm', '22', 'yoman',$(this).val()/10),this.nextElementSibling.value = this.value">
+         <output>24</output>
          <br/>  <br/>
         </div>
  
@@ -174,7 +177,9 @@
          <br/>
   
          <div class="w-80 p-3">
-          <input type="range" class="form-range" min =1 max=100 id="customRange1" onChange="sendMessage('pwm', '24', 'yoman',$(this).val()), sendMessage('pwm', '23', 'yoman',$(this).val())">
+          <input type="range" class="form-range" min =30 max=100 id="customRange1" onChange="sendMessage('pwm', '24', 'yoman',$(this).val()), sendMessage('pwm', '23', 'yoman',$(this).val()),this.nextElementSibling.value = this.value">
+          <output>24</output>
+
           <br/>  <br/>
          </div>
 
@@ -187,10 +192,12 @@
   
     
            <div class="w-80 p-3">
-            <input type="range" class="form-range" min =1 max=100 id="customRange1" onChange="sendMessage('pwm', '23', 'yoman',$(this).val())">
+            <input type="range" class="form-range" min =1 max=100 id="customRange1" onChange="sendMessage('pwm', '23', 'yoman',$(this).val()),this.nextElementSibling.value = this.value">
+            <output>24</output>
             <br/>
             <br/>
-            <input type="range" class="form-range" min =1 max=100 id="customRange1" onChange="sendMessage('pwm', '24', 'yoman',$(this).val())">
+            <input type="range" class="form-range" min =1 max=100 id="customRange1" onChange="sendMessage('pwm', '24', 'yoman',$(this).val()),this.nextElementSibling.value = this.value">
+            <output>24</output>
             <br/>  <br/>
            </div>
 
